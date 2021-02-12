@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hit The Duck</title>
+    <meta name="description" content="Hit The Duck" />
+    <meta name="keywords" content="Duck, Learn, game, Educational game, hit" />
+    <meta name="author" content="Elad Daniel, Dalia Sharoni, Eden Benita, Daniel Katz" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/Game Logo.png" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <!--<!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about" data-toggle="modal" data-target="#exampleModal">אודות</a></li>
+                    <li><a class="howToPlay" data-toggle="modal" data-target="#exampleModal2">איך משחקים?</a></li>
+                    <li>
+                        <a id="mylogo" href="indextest.html">
+                            <img id="logo" src="images/Duck.svg" />
+                            <!--הלוגו של המשחק שלכם-->
+                            <p id="titelgame">Hit The Duck</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="gameArea" class="">
+            <!--<div class="info">
+                    <div id="aboutDiv" class="popUp bounceInDown hide">
+                        <a class="closeAbout">X</a>
+                    </div>
+                    <div id="howToPlayDiv" class="popUp1 bounceInDown hide">
+                        <a class="closeHowToPlay">X</a>
+                    </div>
+            </div>-->
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="HitTheDuck.html" frameBorder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="HITLOGO">
+                        <a href="http://www.hit.ac.il" target=“_blank”>
+                            <img id="HITIMG" src="images/HIT.png"></a>
+                        <a href="https://www.hit.ac.il/telem/overview" target=“_blank”>
+                            <p id="telemURL">הפקולטה לטכנולוגיות למידה</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content howtoplay">
+                <div class="model-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item" width="464" height="261" src="https://www.youtube.com/embed/ZvqrsnxcqH8" frameborder="0" allow="autoplay;" allowscriptaccess="always" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

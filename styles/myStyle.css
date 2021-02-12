@@ -1,0 +1,242 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Heebo', sans-serif;
+}
+
+#mylogo {
+    position: absolute;
+    right: 0px;
+}
+
+.modal-content {
+    background-image: url('../SVG/about.svg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 25% -20%;
+    width: 691px;
+    height: 400px;
+    background-color: transparent;
+    border: none;
+}
+
+.howtoplay  {
+    background-image: url('../SVG/Hottoplay.svg');
+    height: 555px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:5% -20%;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 89vh;
+    width: 97vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+}
+
+/*כותרת משחק*/
+#titelgame {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 17pt;
+    font-weight: 600;
+    position: relative;
+    color: #FDC702;
+    display: inline-block;
+    direction: rtl;
+}
+
+header > a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 35px;
+    height: 35px;
+    direction: rtl;
+}
+
+nav {
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            nav ul li a {
+                display: block;
+                color: rgb(30, 104, 177);
+                text-align: center;
+                padding: 3px 10px;
+                font-weight: 400;
+                font-size: 12pt;
+                font-family: 'Heebo', sans-serif;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-family: 'Heebo', sans-serif;
+                    direction: rtl;
+                    text-decoration: none;
+                }
+
+/*.popUp1 {
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    z-index: 4;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    top: 160px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}*/
+
+.holder {
+    width: 560px;
+    height: 315px;
+    position: relative;
+}
+
+.HITLOGO {
+    margin-top:224px;
+    margin-left:257px;
+}
+
+#HITIMG{
+    height:80px;
+    width:145px;
+}
+
+#telemURL {
+    margin-top: -1px;
+    margin-left: -23px;
+}
+
+.embed-responsive {
+    margin-top: 183px;
+    margin-left: 65px;
+    height: 292px;
+    width: 529px;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
