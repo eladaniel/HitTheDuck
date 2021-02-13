@@ -153,19 +153,27 @@ nav {
 
 .HITLOGO {
     margin-top:224px;
-    margin-left:257px;
+    margin-left:272px;
 }
 
 #HITIMG{
-    height:80px;
-    width:145px;
+    height:65px;
+    width:110px;
 }
 
 #telemURL {
     margin-top: -1px;
     margin-left: -23px;
+    text-align:center
 }
 
+#credit {
+    text-align:center;
+    margin-top:-17px;
+    color:white;
+    font-size:14px;
+    margin-top:-14px;
+}
 .embed-responsive {
     margin-top: 174px;
     margin-left: 59px;
